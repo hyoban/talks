@@ -108,7 +108,18 @@ class: text-center
 
 <div class="grid grid-cols-2 gap-5 pt-4 -mb-6">
 
-<div> 
+<v-click>
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+B[You] --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+</v-click>
+
+<v-click>
+<div>
+
 <h3>工作</h3>
 <p>建议：建议尝试投递简历，看看能拿到的工作情况。</p>
 <p>优点：三年的钱💰和经验，大厂offer也很无敌</p>
@@ -121,15 +132,10 @@ class: text-center
 <p>缺点：考不上的风险大（尤其计算机），缺少工作经验，经济需要一定支持，年龄问题</p>
 
 </div>
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[You] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
+</v-click>
 
 </div>
+
 ---
 clicks: 7
 ---
