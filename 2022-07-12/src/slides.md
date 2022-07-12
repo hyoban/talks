@@ -24,6 +24,14 @@ p {
 </style>
 
 ---
+---
+
+# 安装
+
+- macOS, 在终端输入 `git` 即可
+- windows, 手动安装 [Git for Windows](https://git-scm.com/download/win)
+
+---
 layout: one-bottom
 ---
 
