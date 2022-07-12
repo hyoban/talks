@@ -109,7 +109,7 @@ clicks: 8
 
 # 记录提交
 
-<img v-motion-slide-visible-left v-click-hide class="h-48 rounded" src="https://rogerdudler.github.io/git-guide/img/trees.png">
+<img v-motion-slide-visible-left v-click-hide class="h-48 w-min rounded" src="https://rogerdudler.github.io/git-guide/img/trees.png">
 
 <div class="grid grid-cols-2 gap-x-4 gap-y-4" v-click-hide>
 
