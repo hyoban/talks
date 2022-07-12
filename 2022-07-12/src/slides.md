@@ -24,6 +24,7 @@ p {
 </style>
 
 ---
+layout: one-bottom
 ---
 
 # 前置准备
@@ -38,7 +39,7 @@ p {
 
 </v-clicks>
 
-<div class="h-10"></div>
+::bottom::
 
 <div v-click>
 
@@ -56,7 +57,8 @@ class: text-center
 init, add, commit, clone, push, pull
 
 ---
-clicks: 3
+layout: one-bottom
+clicks: 4
 ---
 
 # 初始化仓库
@@ -85,7 +87,23 @@ clicks: 3
 
 </div>
 
+::bottom::
+
+<v-click at="4">
+
+```
+git clone --depth=1 xxx
+git fetch --unshallow
+```
+
+如果仓库很大，clone 代码先只下载最新的版本，然后再慢慢下载。
+
+> 参考 [Get up to speed with partial clone and shallow clone](https://github.blog/2020-12-21-get-up-to-speed-with-partial-clone-and-shallow-clone/)
+
+</v-click>
+
 ---
+layout: one-bottom
 clicks: 8
 ---
 
@@ -127,8 +145,7 @@ clicks: 8
 
 </div>
 
-<div class="h-10">
-</div>
+::bottom::
 
 <v-clicks at="8">
 
@@ -401,6 +418,7 @@ chmod +x post-receive
 ```
 
 ---
+layout: one-bottom
 ---
 
 # 添加设置好的远端仓库
@@ -415,15 +433,25 @@ git remote add prod ssh://user@ip/path-to-bare/xxx.git
 git push prod main
 ```
 
+::bottom::
+
+> 参考 [【Git】部署流程｜持续部署到私有服务器](https://www.bilibili.com/video/BV1ck4y1B7Pw)
+
 ---
 ---
 
 # 其他 CI/CD 工具
 
 - [Vercel](https://vercel.com/)
+    - [redirects](https://vercel.com/support/articles/does-vercel-support-permanent-redirects)
+    - [github silent](https://vercel.com/support/articles/how-to-prevent-vercel-github-comments)
+    - [cleanUrls](https://vercel.com/docs/project-configuration#project-configuration/clean-urls)
 - [netlify](https://www.netlify.com/)
-- [GitHub Actions](https://github.com/features/actions) ([一个🌰](https://github.com/hyoban/data-playback-compose/blob/master/.github/workflows/gradle.yml))
+- [GitHub Actions](https://github.com/features/actions)
+    - [一个例子](https://github.com/hyoban/data-playback-compose/blob/master/.github/workflows/gradle.yml)
+    - [【CICD】github新功能actions全方位讲解！！](https://www.bilibili.com/video/BV1RE411R7Uy)
 - [Jenkins](https://www.jenkins.io/)
+    - [【CI/CD工具】1 Jenkins原理和使用介绍](https://www.bilibili.com/video/BV1Mt411V7cN)
 
 ---
 ---
@@ -437,7 +465,6 @@ git push prod main
 - [Commit message 和 Change log 编写指南](https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
 - [图解 4 种 git 合并分支方法](https://yanhaijing.com/git/2017/07/14/four-method-for-git-merge/)
 - [Oh Shit, Git!?!](https://ohshitgit.com/)
-- [【Git】部署流程｜持续部署到私有服务器](https://www.bilibili.com/video/BV1ck4y1B7Pw)
 
 ---
 layout: center
