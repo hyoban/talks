@@ -451,8 +451,9 @@ git push prod main
 # 其他 CI/CD 工具
 
 - [Vercel](https://vercel.com/)
-    - [redirects](https://vercel.com/support/articles/does-vercel-support-permanent-redirects)
-    - [github silent](https://vercel.com/support/articles/how-to-prevent-vercel-github-comments)
+    - [redirects](https://vercel.com/docs/project-configuration#project-configuration/redirects)
+    - [rewrites](https://vercel.com/docs/project-configuration#project-configuration/rewrites)
+    - [github silent](https://vercel.com/docs/project-configuration#git-configuration/github-silent)
     - [cleanUrls](https://vercel.com/docs/project-configuration#project-configuration/clean-urls)
 - [netlify](https://www.netlify.com/)
 - [GitHub Actions](https://github.com/features/actions)
