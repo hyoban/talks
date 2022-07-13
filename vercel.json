@@ -6,6 +6,16 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    { 
+      "source": "/2022/git-github/(.*)", 
+      "destination": "/2022/git-github/index.html" 
+    },
+    { 
+      "source": "/2022/pnpm-dependency-management/(.*)", 
+      "destination": "/2022/pnpm-dependency-management/index.html" 
+    }
+  ],
   "github": {
     "silent": true
   }
