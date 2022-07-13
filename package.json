@@ -5,10 +5,10 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.1.76",
-    "@slidev/cli": "^0.28.10",
+    "@slidev/cli": "^0.34.3",
     "@slidev/theme-default": "^0.21.2",
     "playwright-chromium": "^1.23.2",
-    "pnpm": "^6.33.0",
+    "pnpm": "^7.5.1",
     "rimraf": "^3.0.2"
   }
 }
