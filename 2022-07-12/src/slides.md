@@ -187,6 +187,14 @@ clicks: 8
 !/.idea/codeStyles
 ```
 
+4. 全局忽略某些文件, 在用户目录下编辑 .gitignore_global 文件
+
+```
+git config --global core.excludesfile ~/.gitignore_global
+```
+
+比如 macOS 下我们需要全局忽略 .DS_Store 文件
+
 </v-clicks>
 
 ---
